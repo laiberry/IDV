@@ -1,0 +1,132 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* document */
+
+html, body, h1, h2, h3, h4, h5, h6, p, img {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+
+body {
+	background: #000;
+	background-image: linear-gradient(#000, #000, #1c1c1c);
+	color: rgba(255, 255, 255, 0.87);
+	cursor: default;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	line-height: 2.2rem;
+}
+
+article {
+	margin-bottom: 200px;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* grid */
+
+.container {
+	display: grid;
+	grid-column-gap: 40px;
+	grid-template-columns: 2fr 1fr;
+	margin: 0 auto;
+	width: 984px;
+}
+
+/* type */
+
+a {
+	color: rgba(245, 245, 250, 0.38);
+	text-decoration: none;
+	transition: color 0.25s ease;
+}
+
+h4 {
+	font-size: 4.2rem;
+	font-weight: 500;
+	line-height: 4.2rem;
+	padding: 80px 0 40px;
+}
+
+h6 {
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	letter-spacing: 0.15rem;
+	text-transform: uppercase;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+/* header */
+
+header {
+	display: flex;
+	height: 96px;
+	position: fixed;
+	top: 0;
+	transition: background 0.25s ease-in-out, -webkit-backdrop-filter 0.25s ease-in-out, backdrop-filter 0.25s ease-in-out, height 0.25s ease-out;
+	width: 100%;
+}
+
+/* nav */
+
+nav {
+	font-size: 1.4rem;
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+	border-left: 2px solid rgba(255, 255, 255, 0.12);
+	display: block;
+	height: 44px;
+	line-height: 44px;
+	padding: 0 16px;
+	transition: border-left 0.25s ease, color 0.25s ease;
+}
+
+nav a:hover, nav a.active {
+	color: #fff;
+}
+
+nav a:hover {
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+nav a.active {
+	border-left: 2px solid rgba(255, 255, 255, 0.87);
+	color: rgba(255, 255, 255, 0.87);
+	font-weight: 500;
+}
+
+nav h6 {
+	color: rgba(255, 255, 255, 0.6);
+	padding: 110px 16px 20px;
+}
+
+/*.top {
+	background: rgba(255, 255, 255, 0.7);
+	-webkit-backdrop-filter: saturate(1.8) blur(40px);
+			backdrop-filter: saturate(1.8) blur(40px);
+	height: 60px;
+}
+
+.top h5 {
+	transform: scale(0.8);
+}*/
